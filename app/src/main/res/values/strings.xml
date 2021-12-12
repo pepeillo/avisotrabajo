@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Entry notice</string>
+
+    <string name="connecting">Connecting…</string>
+    <string name="connected">Device connected</string>
+    <string name="disconnected">Device disconnected</string>
+    <string name="notify">Notice by</string>
+    <string name="notif_vibrate">Vibration</string>
+    <string name="notif_sound">Sound</string>
+    <string name="notif_notif">Notification</string>
+    <string name="notif_watch">Only watch</string>
+    <string name="not_disturb">DOES NOT DISTURB is activated.</string>
+    <string name="notif_message">Display message</string>
+    <string name="closing">Closing application</string>
+    <string name="closing_sure">Do you want to terminate the app and exit?</string>
+    <string name="exit">Exit</string>
+    <string name="start">Start</string>
+    <string name="warning">Warning</string>
+    <string name="bt_not_supported">Bluetooth is not supported.</string>
+    <string name="bt_discovering">Bluetooth is currently in device discovery process.</string>
+    <string name="bt_disabled">Bluetooth is NOT Enabled.</string>
+
+</resources>

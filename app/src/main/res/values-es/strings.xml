@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aviso de ficha</string>
+
+    <string name="connecting">Conectando…</string>
+    <string name="connected">Dispositivo conectado</string>
+    <string name="disconnected">Dispositivo desconectado</string>
+    <string name="notify">Avisar mediante</string>
+    <string name="notif_vibrate">Vibración</string>
+    <string name="notif_sound">Sonido</string>
+    <string name="notif_notif">Notificación</string>
+    <string name="notif_watch">Sólo reloj</string>
+    <string name="not_disturb">Modo NO MOLESTAR está activo.</string>
+    <string name="notif_message">Mensaje en pantalla</string>
+    <string name="closing">Cerrando aplicación</string>
+    <string name="closing_sure">¿Quieres finalizar la aplicación y salir?</string>
+    <string name="exit">Salir</string>
+    <string name="start">Iniciar</string>
+    <string name="warning">Aviso</string>
+    <string name="bt_not_supported">Bluetoothno soportado.</string>
+    <string name="bt_discovering">Bluetooth está en proceso de búsqueda.</string>
+    <string name="bt_disabled">Bluetooth está desactivado.</string>
+
+</resources>

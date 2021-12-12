@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        release {
+            storeFile file("keystore")
+            storePassword "keystore_password"
+            keyAlias "key_alias"
+            keyPassword "key_password"
+        }
+    }
+    compileSdkVersion 29
+    buildToolsVersion "28.0.3"
+
+    defaultConfig {
+        applicationId "es.jaf.example.avisotrabajo"
+        minSdkVersion 16
+        targetSdkVersion 29
+        signingConfig signingConfigs.release
+        versionCode 1
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+if (project.hasProperty("myproject.properties")) {
+    Properties props = new Properties()
+    def propFile = file(project.property("myproject.properties"))
+    if (propFile.canRead()) {
+        props.load(new FileInputStream(propFile))
+
+        if (props != null
+                && props.containsKey('keystore')
+                && props.containsKey('keystore_password')
+                && props.containsKey('key_alias')
+                && props.containsKey('key_password')) {
+
+            android.signingConfigs.release.storeFile = file(props['keystore'])
+            android.signingConfigs.release.storePassword = props['keystore_password']
+            android.signingConfigs.release.keyAlias = props['key_alias']
+            android.signingConfigs.release.keyPassword = props['key_password']
+        } else {
+            android.buildTypes.release.signingConfig = null
+        }
+    } else {
+        android.buildTypes.release.signingConfig = null
+    }
+}
